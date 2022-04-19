@@ -6,7 +6,7 @@ body {
 
 body,
 h1,
-h3 {
+h3,h4  {
     padding: 0;
     margin: 0;
 }
@@ -148,10 +148,10 @@ button {
 
 /* making article section */
 
-.article-section{
+.article-section {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: repeat(auto-fit,minmax(300px,1fr));
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
 
     padding: 16px;
 }
@@ -160,7 +160,7 @@ button {
     font-size: 32px;
 }
 
-.project-section{
+.project-section {
     grid-row: 1/4;
 }
 
@@ -168,12 +168,12 @@ button {
     display: grid;
 
 
-    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 15px;
     padding-right: 16px;
 }
 
-.project-section .cards{
+.project-section .cards {
     padding: 18px;
 
     border-radius: 18px;
@@ -183,24 +183,43 @@ button {
     display: grid;
 }
 
-.project-section .action-card-btn{
+.project-section .action-card-btn {
     align-self: center;
     justify-self: end;
 
     display: flex;
     gap: 24px;
-    
+
 }
 
-.project-section img{
+.project-section img {
     width: 30px;
 }
 
-.announcement-section{
+.announcement-section {
     grid-column: 2;
+    display: grid;
 }
 
 .trending-section {
     grid-column: 2;
     grid-row: 2/3;
+
+    display: grid;
 }
+
+/* making announcement-section */
+
+.announcement-cards {
+    display: grid;
+    padding: 8px;
+
+    border-radius: 18px ;
+}
+
+.announcement-cards .solid {
+    padding: 8px;
+    border-top: 2px solid #bbb;
+}
+
+/*  */

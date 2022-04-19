@@ -151,7 +151,8 @@ button {
 .article-section {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+    /* grid-template-rows: 1fr 400px; */
+    grid-template-rows: repeat(auto-fit, minmax(420px, 0.6fr));
 
     padding: 16px;
 }
@@ -168,8 +169,8 @@ button {
     display: grid;
 
 
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 18px;
     padding-right: 16px;
 }
 
@@ -199,6 +200,8 @@ button {
 .announcement-section {
     grid-column: 2;
     display: grid;
+    
+    grid-template-rows: 1fr 5fr;
 }
 
 .trending-section {
@@ -206,15 +209,20 @@ button {
     grid-row: 2/3;
 
     display: grid;
+    margin-top: 16px;
+    grid-template-rows: 1fr 5fr;
+
+
 }
 
 /* making announcement-section */
 
 .announcement-cards {
     display: grid;
-    padding: 8px;
+    padding: 16px;
 
     border-radius: 18px ;
+    
 }
 
 .announcement-cards .solid {
@@ -222,4 +230,29 @@ button {
     border-top: 2px solid #bbb;
 }
 
-/*  */
+.announcement-section p {
+    margin: 0;
+}
+
+/* making the trending section */
+
+.trending-cards {
+    border-radius: 18px;
+}
+
+.trending-cards img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+
+    padding: 15px;
+}
+
+.trending-cards .container{
+    display: flex;
+    align-items: center;
+}
+
+.trending-cards p,h4 {
+    margin: 0;
+}

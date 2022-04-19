@@ -61,7 +61,7 @@ h3 {
 .header-section {
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
-    grid-template-rows: 1fr 1fr 3fr;
+    grid-template-rows: 0.5fr 1fr 3fr;
 
     padding: 0 0px 24px 46px;
 }
@@ -78,7 +78,6 @@ h3 {
 
     grid-column: 1 / span 2;
     grid-row: 3;
-    padding-top: 24px;
 }
 
 .buttons {
@@ -89,7 +88,9 @@ h3 {
     grid-row: 3;
     grid-column: 3;
     gap: 32px;
-    justify-self: center;
+    justify-self: end;
+
+    padding-right: 10%;
 }
 
 button {
@@ -136,13 +137,36 @@ button {
     display: flex;
     flex: 0;
     gap: 32px;
-    justify-content: start;
+    justify-content: flex-end;
     align-items: center;
 
-    padding-left: 30%;
+    padding-right: 10%;
 }
 
 .overview-section img[alt="conan"] {
     width: 50px;
 }
 
+/* making article section */
+
+.article-section{
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.project-section {
+    
+    grid-row: 1 / span 3 ;
+    grid-column: 1 / span 2;
+    display: grid;
+}
+
+.announcement-section{
+    grid-row: 1;
+    display: grid;
+}
+
+.trending-section {
+    grid-column: 3;
+}
